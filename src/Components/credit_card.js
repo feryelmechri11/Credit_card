@@ -37,7 +37,7 @@ class CreditCard extends Component {
     if (regR.test(ribe) && ribe.length <= 16) {
       this.setState({ rib: ribe });
     } else {
-      alert("You must enter 16 number!");
+      alert("Please enter a valid card number!");
       ribe = ribe.substr(0, 16);
     }
 
@@ -86,11 +86,11 @@ class CreditCard extends Component {
         if (regexYear.test(dateEy)) {
           dateE = dateEm + "/" + dateEy;
         } else {
-          alert("enter el 3am ");
+          alert("Please enter a valid year");
           dateE = "";
         }
       } else {
-        alert("dakhel el chhar rak ta3ebtnii ");
+        alert("Please enter a valid month ");
         dateE = "";
       }
     }
